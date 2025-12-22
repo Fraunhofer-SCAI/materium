@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "materium"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "pandas <= 2.1",
+    "muon-optimizer @ git+https://github.com/KellerJordan/Muon@f90a42b28e00b8d9d2d05865fe90d9f39abcbcbd",
+    "mattergen",
+]
+
+[tool.uv.sources]
+mattergen = { path = "./vendor/mattergen", editable=true }
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
