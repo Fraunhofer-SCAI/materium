@@ -3,12 +3,6 @@ This is the official repository for the paper ["Materium: An Autoregressive Appr
 
 # Instructions
 
-Clone with submodule
-```bash
-$ module load git-lfs Ninja/1.12.1-GCCcore-13.3.0
-$ git clone --recursive https://gitlab-intern.scai.fraunhofer.de/ndobberstein/materium.git
-```
-
 ```bash
 # pip install uv
 
@@ -24,7 +18,7 @@ To get the training data, please follow the instruction on the [MatterGen page](
 
 ```bash
 $ cd vendor/mattergen
-# Make sure you did module load git-lfs
+# Make sure you have git lfs
 $ # Download file from LFS
 $ git lfs pull -I data-release/alex-mp/alex_mp_20.zip --exclude=""
 $ unzip data-release/alex-mp/alex_mp_20.zip -d datasets
