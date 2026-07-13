@@ -51,6 +51,9 @@ tokenizer = CrystalTokenizer(
 $(llm_env) python src/materium/llm_generate.py
 ```
 
+## Pretrained Models
+Checkpoint will be availibe on zendoo after acceptance of the paper.
+
 The llm_generate.py script has different arguments:
 ### Model and Output:
 - `--ckpt_dir`: Specifies the directory containing the pre-trained model checkpoint.
